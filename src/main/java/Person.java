@@ -1,4 +1,5 @@
 import javax.persistence.*;
+import javax.persistence.Entity;
 import java.io.Serializable;
 import java.util.List;
 
@@ -6,6 +7,7 @@ import java.util.List;
  * Created by praxis on 16.01.17.
  */
 @Entity
+@Table(name="persons")
 public class Person implements Serializable{
     String name;
     String surname;

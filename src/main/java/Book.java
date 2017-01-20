@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by praxis on 16.01.17.
  */
 @Entity
+@Table(name="books")
 public class Book implements Serializable {
     @ManyToOne(targetEntity = Person.class, fetch = FetchType.LAZY)
     Person author;
