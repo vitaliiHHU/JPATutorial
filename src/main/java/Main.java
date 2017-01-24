@@ -26,8 +26,6 @@ public class Main {
         manager.persist(book);
         manager.getTransaction().commit();
 
-        System.out.println(author.getListOfBook().get(0));
-
 
     }
 }
